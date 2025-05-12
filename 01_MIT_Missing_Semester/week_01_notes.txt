@@ -1,0 +1,9 @@
+(1) Some General in Terminal Usage like pwd, cd, ls, echo, cat.
+
+(2) which xxx, check the version or the absolute path of installation position of one operation.
+
+(3) relative path use . or .. to stand for current or parent directory. Usually the shorter one is used.
+
+(4) cd - to toggle between two directories.
+
+(5)
