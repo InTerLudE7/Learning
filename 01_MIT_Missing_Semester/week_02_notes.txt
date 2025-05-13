@@ -1,0 +1,20 @@
+(1) Vim replace Emacs HHHh
+
+(2) :quit, :w and :wq for sure.
+
+(3) :newtab for a new tab, and :w filename.filetype could save this tab.
+
+(4) hjkl move under normal interface, 0 $ e w move.
+
+(5) o for create a new line below the Cursor and switch to insert mode.
+
+(6) d for deleting sth, combining with 0$ew to get more opeartion.
+
+(7) u for undo, c for change, r for replace a character, dd for delete the whole line. cc for changing the whole line.
+
+
+******************************************************************************
+* Since Macbook i have doesn't have a physical "esc", please find a way to overwrite that if possible.
+* Enable Vim fashion in terminal line, VS code editor is an exercise.
+* And also, try to figure out how to enable an interface with editor on left and terminal on right to edit and compile the code at same time.
+******************************************************************************
