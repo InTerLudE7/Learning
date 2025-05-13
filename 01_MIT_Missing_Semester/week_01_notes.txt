@@ -6,4 +6,19 @@
 
 (4) cd - to toggle between two directories.
 
-(5)
+(5) > and < to rewire the output or the input of operation.
+    >> will append the input to the output
+
+(6) | pipe operator. Take the left output as an input in the next operator.
+    e.g.: ls -l | tail -n1 will gives the last output in ls -l
+
+(7) curl to connect to a url with options like --silent --head and
+    grep to grab a value with opitons like --ignore-case
+    cut --delimitor=" " -f2 , which means cut the output by delimiter and fetch the second element.
+
+(8) sudo, which is do as super user
+    sudo su, could change the role of shell user to root. and make changes to the computer system itself.
+    combine the pipe operator: we have: echo 1000 | sudo tee brightness, which will pass the echo 1000 to brightness as a role ofsuper user, the root.
+
+(9) xdg-open xxx
+
