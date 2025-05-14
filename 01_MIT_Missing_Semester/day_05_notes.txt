@@ -1,1 +1,19 @@
 Version Control Using Git
+
+Consider a repo
+root
+- foo   -> folder is called as a tree
+  -- bar.txt  -> the file is called as blob
+- bar.txt -> this file is also called as blob.
+
+blol is treated as an array of bytes.
+tree is a mapping from a string (its name) to a tree (sub-folder) or blob (file).
+commit is a structured record.
+commit = struct{
+         parents: an array of commits,
+         author: string,
+         message: string,
+         snapshot: tree/folder
+}
+
+Git init, git status, git add, git commit.
