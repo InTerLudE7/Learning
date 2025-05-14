@@ -17,7 +17,38 @@ commit = struct{
 }
 
 Git init, git status, git add, git commit.
-As a magic way to show the git log when there are multiple contributors: git log --all --graph --decorate
+As a magic way to show the git log when there are multiple contributors: git log --all --graph --decorate --oneline
 
-git checkout to switch the workding directory to a history version.
-git diff to check the difference made since last commit.
+git checkout to switch the workding directory to a history version. or a diff branch
+git diff to check the difference made since last commit. or git diff branch1 branch2 or git diff commit1 commit2
+
+"git branch branch-name" could create a new branch called branch-name
+"git branch -vv" would show the operations made to differetn branch, in very verbose way.
+"git merge another-branch" will merge the current branch with another branch.
+If the merge is easy, it will auto-navigate to the git push stage.
+If the merge is difficult, we will manually fix the problem and then add the fixed file then git merge --continue
+
+* always check the git log to make sure the branch name and also the branch/version in working directory.
+* And it is always good to keep the branch name of main-stream as main/master, so make sure to use the main branch 
+         as working one when merge the other branch.
+         If accidently, merged main to another. git branch -m new_name can modify the current directory's name and fix it with git branch -m.
+
+        
+git remote could show the backup place. if we are using the github, then a default remote will be created called origin.
+* A local directory can serve as remote, also. The whole logic of remote is not lied to the github.com, a website.
+                                                    but lied to the git a CLI tool.
+git push is used to push the chagnes from local to remote folder and then git fetch is usded to fetch the most-updated from remote.
+However, we need to fetch the most updated folder and then merge it with our old version (imagine this is the operation of a different contributor).    
+         Then we need "git fetch; git merge" to work together, which is acutally, aka, "git pull".
+
+Other feature:
+git config, git is highly configurable tool, make changes to ./.gitconfig.
+git clone --shallow, when you want the most recent snapshot of a gigantic repo, ignoring the previous commit.
+git add -p, is useful when you want to add only a part of changes to the commit. Detail not written here.
+git blame
+git show
+git stash
+git bisect
+.gitignore
+.DS_Store
+GUI can be used.
