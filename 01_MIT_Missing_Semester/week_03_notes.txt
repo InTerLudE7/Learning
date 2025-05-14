@@ -1,0 +1,16 @@
+Data Wrangling:
+* This is more like a course on the data in terms of Computer Science instead of the data in Statistic.
+* Which means I need to use regular expression. Using regex101.com if necessary.
+
+(1) We can fetch a dataset from online and then use grep to filter some thing.
+e.g.: curl -s https://raw.githubusercontent.com/elastic/examples/master/Common%20Data%20Formats/apache_logs/apache_logs | grep "POST" > filtered.log
+
+(2) Use sed 's/[pattern]/[new pattern]/[Options]'
+e.g.: sed 's/error/ERROR/Ig' input.log, which will replace all (g option) 'lower-case error' with 'the upper case ERROR'.
+
+(3) I can use sort or uniq, which is the same idea in Python and R.
+
+(4) xargs: which can take a list of things as input to some operator.
+
+However, the whole idea is to use the CLI to fetch data, search adn filter data, extract or substitute some nubmer, create some summary.
+And then interact with other software to do some simple stuff. [This looks good but really not my need.]
