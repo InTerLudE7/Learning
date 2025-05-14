@@ -1,7 +1,13 @@
 import sys
 
+def cat():
+    print('Meow!')
+
 def default():
-    print('Hello')
+    if sys.argv[1] == 'cat':
+        cat()
+    else:
+        print('Hello')
 
 def main():
     default()
