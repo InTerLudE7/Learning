@@ -17,3 +17,6 @@ commit = struct{
 }
 
 Git init, git status, git add, git commit.
+As a magic way to show the git log when there are multiple contributors: git log --all --graph --decorate
+
+
