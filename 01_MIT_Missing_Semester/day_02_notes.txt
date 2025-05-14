@@ -15,6 +15,7 @@
 
 ******************************************************************************
 * Since Macbook i have doesn't have a physical "esc", please find a way to overwrite that if possible.
+** Use Ctrl C to opt out.
 * Enable Vim fashion in terminal line, VS code editor is an exercise.
 * And also, try to figure out how to enable an interface with editor on left and terminal on right to edit and compile the code at same time.
 ******************************************************************************

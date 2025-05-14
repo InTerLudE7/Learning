@@ -1,0 +1,22 @@
+Command Line Enviorenment.
+
+(1) Job Control
+    This means we can run a program or a job in terminal. In the Meanwhile we can use keyboard to control the running of job.
+    For Example: ^c  will send SIGINT to inturupt the job. and ^\ is SIGQUIT to quit the program.
+                 	will send SIGTSTP to stop the job, which can be resuemd by bg #JobNumber or fg #JobNumbrer.
+    ”sleep 1000 &“ will let the computer sleep 1000 secs but the process is operating in background.
+     
+(2) Terminal Multiplexer
+    Session Windows Panes.
+    tmux to start a new shell.
+    tmux new -t session_name: to create a new session.
+     d to detach  and tmux attach -t session_name to re-attach.  
+    tmux kill-server or "tmux ls | cut -d: -f1 | xargs -n1 tmux kill-session -t" to kill all sessions.
+    Further create more windows within a session and then split the window to different panes.
+
+(3) Dot files
+    Help recover the setup. But not will be used for now.
+
+(4) Remote Machine
+    ssh to login, key chain.
+
