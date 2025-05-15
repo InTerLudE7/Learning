@@ -1,0 +1,8 @@
+Security and Cryptography
+
+Not Learned. For Keychain on git or ssh. Explore this when the further learning give a rise of interest to this.[Noted on 15MAY2025]
+
+Some Cases:
+- Password Manager: KeePassXC
+- 2-FA
+

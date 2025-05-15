@@ -1,0 +1,28 @@
+Meta-Programming
+
+Metaprogramming is the practice of writing code that can generate, modify, or adapt other code. Rather than directly writing instructions for every case, you write rules, templates, or patterns that apply across many similar situations.
+
+The key idea is:
+
+"Let code reason about and produce code."
+
+Metaprogramming is especially useful when:
+
+- You want to avoid repetitive code.
+
+- You need to automate workflows (e.g., build systems).
+
+- You're building general-purpose tools or frameworks.
+
+- The logic needs to adapt based on context or inputs.
+
+It shows up in many forms, such as:
+
+- Pattern rules in Makefile
+
+- Decorators or code generators in Python
+
+- Tidy evaluation in R (e.g., across() in dplyr)
+
+Macros or expression manipulation in Lispaetaprogramming is the practice of writing code that can generate, modify, or adapt other code. Rather than directly writing instructions for every case, you write rules, templates, or patterns that apply across many similar situations.
+

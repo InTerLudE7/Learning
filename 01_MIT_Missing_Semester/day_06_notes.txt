@@ -1,0 +1,16 @@
+Debuggging and Profiling
+
+Debug using the log and ad hoc print statement.
+
+Profiling, somehow, means to optimization the running of code.
+- In r, Rprofile works fine.
+- In Python, I will go check which 3rd party tool can be used.
+
+Rescource Monitoring,
+The idea is the CPU time and Kernal time are not usually the real/clock time. And the jobs not always take all the resources of CPU GPU and so on. 
+
+Check the following link if Rescource Monitoring is needed.
+"https://missing.csail.mit.edu/2020/debugging-profiling/"
+Well, I guess this should run the code from terminal instead of using other IDE r-studio, Interactive-computing-environment like jupyter-notebook, or General code editor like VS-code.
+
+
