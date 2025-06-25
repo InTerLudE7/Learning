@@ -1,0 +1,30 @@
+Week 1:
+Terminology: AI >= ML >= DL >= Generative AI
+
+For the Example on Page 28-31: This is a constructive job, which means we the You already know the target function, e.g. m(m(m(x))), and just want to express it using a neural network's building blocks. On the other hand, the Learning job means u don’t know the function but have data samples (i.e. input-output pairs) — the NN tries to learn the mapping.
+
+For the constructive job, the code are listed in ./Homework/Week1_Construct.py
+For the Learning job, the code are listed in ./Homework/Week1_Learning.py
+   The Idea is : for constructive job, a simple structure is enough. But for Learning job, the structure is much more complicated 1->64->64->64->64->1.
+
+Terminology: Depth, Width and capacity. Loss Function
+Deep learning can be broadly categorized into several learning paradigms. 
+- Supervised learning involves training models on labeled data to predict outcomes, widely used in classification and regression tasks.
+- Unsupervised learning aims to uncover patterns or structures in data without labels, such as clustering and dimensionality reduction.
+- Reinforcement learning trains an agent to make sequential decisions by interacting with an environment to maximize cumulative reward. 
+- Semi-supervised learning leverages both labeled and unlabeled data, useful when labeled data is scarce.
+- Self-supervised learning constructs training signals from the input data itself, enabling effective representation learning without manual labels, and is widely used in language and vision pretraining. 
+- Multi-task learning trains a model on multiple related tasks simultaneously, promoting generalization by shared representations. 
+- Meta-learning, or “learning to learn,” focuses on building models that can quickly adapt to new tasks with limited data. 
+- Federated learning enables distributed model training across decentralized devices without sharing raw data, preserving privacy. 
+- Evolutionary learning applies principles of natural selection to evolve neural architectures or policies, often used in reinforcement learning or neural architecture search.
+
+A typical deep learning (DL) project begins with understanding the problem and acquiring data through public datasets, databases, web scraping, or crowd labeling. The next step is data preprocessing, which includes cleaning data, scaling numeric features, and handling categorical or text data. The processed data is then split into training, validation, and test sets. In the modeling phase, the neural network architecture and hyperparameters are defined and the model is trained on the training dataset. Predictions are evaluated using metrics specific to the task, such as MSE or R-square for regression, accuracy or AUC for classification, and others for NLP or unsupervised learning. If model performance is unsatisfactory, hyperparameter tuning is done by adjusting parameters, architecture, or regularization. Once acceptable performance is achieved, the model is deployed.
+
+
+
+
+
+
+
+
