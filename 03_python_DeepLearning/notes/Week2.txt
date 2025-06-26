@@ -1,0 +1,99 @@
+Terminology:
+- The basic of Nerual Networks:
+ -- (1) Neurons/nodes: Receive input, perform computation(both linear and non-linear[by Activation function]) and produce output.
+ -- (2) Channels/Connections: Each channel has parameters (i) weight to determine the strength of connection, (2) bias to account for the deviation. Both of weight and bias are trainable.
+ -- (3) Activation Function: Introducing the non-linearity to layers. Common activation function: sigmoid, tanh, ReLU and softmax.
+- Training: 
+ -- (1) Forward Propagation: How the NN make predictions
+ -- (2) Backward Propagration: How the NN adjust weights and bias.
+
+-Modern DL Model Architecture:
+ -- (1) CNN: Convolutional Neural Networks.
+        Convolutional Layers: Extract features from input images using filters.
+        Pooling Layers: Reduce the dimensions and computational load, retaining key information.
+        Fully Connected Layers: Classify images based on extracted features.
+        Classical Structure: LeNet-5, AlexNet, VGGNet
+  --- More notes:
+
+ -- (2) RNN: Recurrent Neural Networks.
+        Process sequences of data (time-series data) with memory of previous inputs.
+        Classical Structure: LSTM, GRU
+  --- More notes:
+
+ -- (3) U-Net:
+        With Encoder and Decoder path: 
+        Encoder: a series of convolutional and max-pooling layers.
+        Bottleneck: Intermediate layers connects the encoder and decoder.
+        Decoder: a series of up-convolution and concatenation layers.
+        Final layer: Convolutional layer that maps features to desired output.
+        
+        Classical Structure: 2D/3D UNet, Attention UNet.
+  --- More notes:
+
+ -- (4) Autoencoder:
+        Unsupervised Learning for dimension reduction and feature learning.
+        Encoder and decoder.
+
+        Classical Structure: Standard Autoencoder, Variational Autoencoder (VAE).
+  --- More notes:
+
+ -- (5) Graph Neural Network:
+        Process graph-structured data, utilized the node features and graph topology for learning.
+        Nodes, Edges, Node Features, Graph Convolution, Readout Layer.
+
+        Classical Structure: Graphical version of the NN mentioned before.
+  --- More notes:
+ 
+ -- (6) Generative Adversarial Networks:
+        Comprises two neural networks, a generator and a discriminator, competing against each other.
+        Mechanism: Generator creates images, trying to fool the discriminator by generating data similar to those in the training set.
+                   Discriminator evaluates them, trying to distinguish between fake data and real data.
+  --- More notes:
+
+ -- (7) Transformer Models:
+        Utilizes self-attention mechanisms, excellent for handling sequences of data.
+        Following an encoder-decoder structure, eliminating recurrence and convolutions.
+
+        Classical Structure: BERT, AlphaFold.
+ 
+ -- (8) Deep Reinforcement Learning:
+        DRL leverages neural networks to approximate value functions and policies, enabling agents to learn complex tasks from high-dimensional sensory inputs.
+        KeyComponents: Agent, Environment, Reward, Policy, and Value Function.
+
+- Activation functions:
+  introduce non-linearity to neural networks, allowing them to learn complex patterns.
+ -- Linear: activations output the input as-is and are rarely used alone due to limited expressiveness, except for the regression job.
+ -- Tanh: Hyperbolic Tangent activation function maps inputs to (–1, 1) and is zero-centered, but can suffer from vanishing gradients. 
+ -- Sigmoid: Sigmoid outputs values in (0, 1), useful for probabilities but also prone to vanishing gradients and not zero-centered. 
+ -- ReLU: (Rectified Linear Unit) outputs zero for negatives and identity for positives, offering fast training and mitigating vanishing gradients, though some neurons may "die".
+ -- Softmax is used in classification to convert raw scores into probabilities summing to one.
+ -- Logistic Sigmoid: Maps input to (0, 1), commonly used in binary classification.
+ -- Leaky ReLU: Allows a small gradient for negative inputs to prevent dead neurons.
+ -- PReLU (Parametric ReLU): Like Leaky ReLU, but the slope for negatives is learnable.
+ -- SoftPlus: Smooth and always differentiable approximation of ReLU.
+ -- GELU (Gaussian Error Linear Unit): Introduces stochasticity, ideal for transformers.
+ -- SiLU (Swish): Blends linear and sigmoid features; smooth and effective.
+ -- ELU (Exponential Linear Unit): Transitions to an exponential form for negatives, aiding learning.
+ -- SELU (Scaled ELU): Self-normalizing, keeping activations mean and variance stable.
+ -- Swish: Adaptive version of SiLU using a learnable scaling parameter β for flexibility.
+  --- The logic of using different activation is: (1) using one activation function 
+                                                  (2) result is unsatisfied 
+                                                  (3) Check what's wrong (could be dead neuron)
+                                                  (4) find a new activation function to fix the problem
+                                                  (5) Change the Network line-by-line or section-by-section 
+                                                  (6) Repeat (1) - (5), Keep in mind: Using a new activation function is always the secondary choice.
+
+
+- Loss functions:
+ 
+
+
+
+
+
+
+
+
+
+
+
